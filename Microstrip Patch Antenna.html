@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/JS.css">
+    <title>RF Calculator</title>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-somaiya" src="Images/somaiya logo.png" alt="Somaiya Logo"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <h1>Microstrip Patch Antenna Calculator</h1>
+    <img class="img3" src="Images/3.jpeg" alt="">
+    <img class="img1" src="Images/1.jpeg" alt="">
+    <img class="img2" src="Images/2.jpeg" alt="">
+
+    <div class="inp">
+      <p>Calculating for:<br> 1. Width <br> 2. Effective Dielectric Constant(ϵreff) <br> 3. Extended Increamental Length <br> 4. Actual Length<br> 5. Effective Length <br></p>
+      <hr>
+      <p>Dielectric Constant<br></p>
+      ϵr <input type="text" id="numField3"><br>
+      <br>
+        <hr>
+        <p>Frequency<br></p>
+        fr <input type="text" id="numField4"><br>
+        <select class="drpdwn" id="unitFr">
+          <option value="Unit">Unit</option>
+          <option value="GHz">GHz</option>
+          <option value="MHz">MHz</option>
+          <option value="kHz">kHz</option>
+          <option value="Hz">Hz</option>
+          <option value="mHz">mHz</option>
+          <option value="μHz">μHz</option>
+          <option value="nHz">nHz</option>
+        </select><br>
+      <hr>
+      <p>Height<br></p>
+      h <input type="text" id="numField5"><br>
+        <select  id="unitH">
+        <option value="Unit">Unit</option>
+        <option value="m">m</option>
+        <option value="cm">cm</option>
+        <option value="mm">mm</option>
+        <option value="μm">μm</option>
+        <option value="nm">nm</option>
+      </select><br>
+        <hr>
+        <br><br>
+        <!-- <input type="Submit"  id="sub" value="Calculate1" >-->
+        <button onclick="calculate()" type="button"  id="Calculate">Calculate</button>
+        <hr>
+    <p>Width(mm)</p>
+        <input type="text"  class ="output" id="result1">
+        <br>
+        <p>ϵreff</p>
+        <input type="text" class="output" id="result2">
+        <br>
+        <p>Extended Increamental Length(mm)</p>
+        <input type="text" class="output" id="result3">
+        <p>Actual Length(mm)</p>
+    <input type="text"  class ="output" id="result4">
+    <br>
+    <p>Effective Length(mm)</p>
+    <input type="text" class="output" id="result5">
+    <hr>
+
+    <script src="JS/calc.js"></script>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+</html>

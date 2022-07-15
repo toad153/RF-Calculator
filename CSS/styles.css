@@ -1,0 +1,51 @@
+.navbar{
+    background-color: #b31a28;
+}
+
+.navbar-somaiya{
+    margin: auto;
+    padding: 2rem;
+}
+
+h3{
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.btn-primary{
+    background-color: #b31a28;
+    border-color: #b31a28;
+}
+
+.btn{
+    margin: auto;
+    display: block;
+}
+
+.form-floating.mb-3.Output{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    padding-bottom: 40px;
+}
+
+
+.form-floating.mb-3.Input{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    border-radius: 50px;
+}
+
+img{
+    display: block;
+    margin: 1% auto 1% auto;
+}
+
+.img{
+    display: block;
+    margin: 1% auto 2% auto;
+}

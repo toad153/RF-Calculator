@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style para.css">
+
+</head>
+<body>
+    <div class="container-fluid">       
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+            <img class="img-somaiya" src="Images/somaiya logo.png" alt="Somaiya Logo"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+        </nav>
+    </div><br><br>
+<h1 style="text-align:center;">PARALLEL-PLATE LINE CALCUALTOR</h1><br>
+<div class="info">
+  <h3 class="head" >Formulae Used:</h3><br>
+  <img class="formula-sheet" src="Images/formula.png" alt="">
+<ul class="variable">
+  <li>w = Width of the Plate</li><br>
+  <li>d = Plate separation</li><br>
+  <li>εr = relative dielectric constant</li><br>
+  <li>μr = relative permeability </li><br>
+  <li>δ = Skin Depth</li><br>
+  <li>σCond = Conductivity of the Conductor</li><br>
+  <li>σDiel = Conductivity of the Dielectric</li><br>
+</ul>
+        <img class="plate-img" src="Images/parallel plate.png" alt="">
+</div>
+    <h2 class="h2" style="font-size:10mm ;" >Input</h2>
+    
+<div class="form-floating mb-3 Input">
+   
+  
+   <!-- INPUT FOR D -->
+   <input type="text" id="d"/><br><br>
+   <!-- <label for="d">m</label> -->
+   <label for="d"> <strong>d</strong></label>
+   <select id="unitd">
+     <option value="">----Select the Unit----</option>
+     <option value="Gm">Gm</option>
+     <option value="Mm">Mm</option>
+     <option value="km">km</option>
+     <option value="m">m</option>
+     <option value="mm">mm</option>
+     <option value="um">μm</option>
+     <option value="nm">nm</option>
+   </select>
+   <br><br><br>
+
+
+   <!-- INPUT FOR W -->
+   <input type="text" id="w"/><br><br>
+   <!-- <label for="w">m</label><br> -->
+   <label for="w"> <strong>w</strong></label>
+   <select id="unitw">
+     <option value="">----Select the Unit----</option>
+     <option value="Gm">Gm</option>
+     <option value="Mm">Mm</option>
+     <option value="km">km</option>
+     <option value="m">m</option>
+     <option value="mm">mm</option>
+     <option value="um">μm</option>
+     <option value="nm">nm</option>
+   </select><br><br><br>
+
+
+   <!-- INPUT FOR Er -->
+   <input type="text" id="er"/><br>
+   <label for="er"> <strong>εr</strong></label><br><br>
+
+
+   <!-- INPUT FOR Ur -->
+   <input type="text" id="ur"/><br>
+   <label for="ur"> <strong>μr</strong></label><br><br>
+
+
+   <!-- INPUT FOR σcond -->
+   <input type="text" id="sigmac"/><br><br>
+   <!-- <label for="sigmac">S/m</label><br> -->
+   <label for="sigmac"> <strong>σcond</strong></label>
+   <select id="unitsc">
+     <option value="">----Select the Unit----</option>
+     <option value="Gm">GS/m</option>
+     <option value="Mm">MS/m</option>
+     <option value="km">kS/m</option>
+     <option value="m">S/m</option>
+     <option value="mm">mS/m</option>
+     <option value="um">μS/m</option>
+     <option value="nm">nS/m</option>
+   </select><br><br><br>
+
+
+   <!-- INPUT FOR σdiel -->
+   <input type="text" id="sigmad"/><br><br>
+   <!-- <label for="sigmad">S/m</label><br> -->
+   <label for="sigmad"> <strong>σdiel</strong></label>
+   <select id="unitsd">
+     <option value="">----Select the Unit----</option>
+     <option value="Gm">GS/m</option>
+     <option value="Mm">MS/m</option>
+     <option value="km">kS/m</option>
+     <option value="m">S/m</option>
+     <option value="mm">mS/m</option>
+     <option value="um">μS/m</option>
+     <option value="nm">nS/m</option>
+   </select><br><br><br>
+
+
+   <!-- INPUT FOR SkinDepth -->
+   <!-- <input type="text" id="skindepth"/> -->
+   <!-- <label for="skindepth">m</label><br> -->
+   <!-- <select id="unitskd">
+     <option value="Gm">Gm</option>
+     <option value="Mm">Mm</option>
+     <option value="km">km</option>
+     <option value="m">m</option>
+     <option value="mm">mm</option>
+     <option value="um">μm</option>
+     <option value="nm">nm</option>
+   </select><br>
+   <label for="skindepth">δ</label><br><br> -->
+
+
+   <!-- INPUT FOR frequency -->
+   <input type="text" id="f"/><br><br>
+   <!-- <label for="sigmac">S/m</label><br> -->
+   <label for="f"> <strong>Frequency</strong></label>
+   <select id="unitf">
+     <option value="">----Select the Unit----</option>
+     <option value="Thz">THz</option>
+     <option value="Ghz">GHz</option>
+     <option value="Mhz">MHz</option>
+     <option value="khz">kHz</option>
+     <option value="hz">Hz</option>
+     <option value="mhz">mHz</option>
+     <option value="uhz">μHz</option>
+     <option value="nhz">nHz</option>
+   </select><br><br><br>
+
+
+   <button onclick="para()"type="button" class="btn btn-primary" id="Calculate">Calculate</button><br><br>
+
+   <h2>Parameters</h2>
+
+   <p>Resistance(R)</p>
+   <input type="text" id="R"/>
+   <label for="R">Ω/m</label><br><br>
+
+
+   <p>Inductance(L)</p>
+   <input type="text" id="L"/>
+   <label for="L">H/m</label><br><br>
+   
+
+   <p>Capacitance(C)</p>
+   <input type="text" id="C"/>
+   <label for="C">F/m</label><br><br>
+
+
+   <p>Conductance(G)</p>
+   <input type="text" id="G"/>
+   <label for="G">S/m</label><br>
+
+  </div>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+</body>
+<script src="JS/calc.js"></script>
+</html>

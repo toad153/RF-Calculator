@@ -1,0 +1,44 @@
+.navbar{
+    background-color: #b31a28;
+}
+
+.navbar-somaiya{
+    margin: auto;
+    padding: 2rem;
+}
+
+.calculator{
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+}
+
+h1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.list-group-item.active
+{
+    background-color: #b31a28;
+    border-color: #b31a28;
+}
+
+.drpdwn {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.formula-sheet{
+    display: block;
+    height: 200px;
+}
+
+.Line{
+    padding-bottom: 3rem;
+}
+
+.VSWR{
+    padding-bottom: 5rem;
+}

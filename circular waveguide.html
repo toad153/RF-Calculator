@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/waveguide.css">
+    <title>Circular Waveguide Calculator</title>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-somaiya" src="Images/somaiya logo.png" alt="Somaiya Logo"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <h1>Circular WaveGuide Calculator</h1>
+    <img class="img1" src="Images/circular waveguide.jpg" alt="Circular Waveguide">
+    <div class="inp">
+      <p>Calculating for:<br> Cutoff frequency of Circular Waveguide <br></p>
+        <hr>
+        <p>Radius<br></p>
+        r <input type="text" id="numField4"><br>
+        <select class="drpdwn" id="unitr">
+          <option value="Unit">Unit</option>
+          <option value="Km">Km</option>
+          <option value="m">m</option>
+          <option value="cm">cm</option>
+          <option value="mm">mm</option>
+          <option value="μm">μm</option>
+          <option value="nm">nm</option>
+        </select><br>
+        <hr>
+        <!-- <input type="Submit"  id="sub" value="Calculate1" >-->
+        <button onclick="circular()" type="button"  id="Calculate">Calculate</button>
+      <hr>
+      <p>Cutoff Frequency<br></p>
+      f <input type="text" class="output" id="result1"><br>
+        <select  id="unitf">
+        <option value="Unit">Unit</option>
+        <option value="GHz">GHz</option>
+        <option value="MHz">MHz</option>
+        <option value="KHz">KHz</option>
+        <option value="Hz">Hz</option>
+        <option value="mHz">mHz</option>
+        <option value="μHz">μHz</option>
+        <option value="nHz">nHz</option>
+      </select><br>
+      <img class="formula" src="Images/circular formula.png" alt="Circular Waveguide Formula">
+
+    <script src="JS/calc.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.Input{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+
+}
+
+.navbar{
+    background-color: #b31a28;
+}
+
+.navbar-somaiya{
+    margin: auto;
+    padding: 2rem;
+}
+
+.btn-primary{
+    background-color: #b31a28;
+    border-color: #b31a28;
+}
+
+.btn{
+    margin: auto;
+    display: block;
+}
+
+/* .unitd{
+    padding: 100px;
+} */
