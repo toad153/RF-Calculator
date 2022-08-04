@@ -49,11 +49,10 @@ p{
     display: block;
 }
 .img-formulae{
-  align-items: left;
-  height: 300px;
-  width: 200px;
-  text-align: left;
-
+    text-align: center;
+}
+.img-formulae2{
+  margin-bottom: 2%;
 }
 .output{
   text-align: center;
@@ -71,7 +70,7 @@ p{
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.friis-formulae{
+/* .friis-formulae{
   height: 10px;
   width: 10px;
-}
+} */

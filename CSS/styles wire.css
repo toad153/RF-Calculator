@@ -51,11 +51,10 @@ p{
     display: block;
 }
 .img-formulae{
-  align-items: left;
-  height: 300px;
-  width: 200px;
-  text-align: left;
-
+    text-align: center;
+}
+.img-formulae2{
+    margin-bottom: 2%;
 }
 .output{
   text-align: center;

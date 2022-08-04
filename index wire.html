@@ -1,149 +1,160 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RF Calculator</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/styles wire.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RF Calculator</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/styles wire.css">
 
 </head>
-<body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html">
-            <img class="img-somaiya" src="Images/somaiya logo.png" alt="Somaiya Logo"></a>
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Videos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-        </nav>
-    </div>
 
-    <div class="form-floating mb-3 Input">
-      <h3>Formulae Used:</h3>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-somaiya" src="Images/somaiya logo.png" alt="Somaiya Logo"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <h3>Formulae Used:</h3>
     <div class="img-formulae">
-        <img class="img-formulae" src="Images/formulae.png" alt="Formulae" id="image-formulae">
+      <img class="img-formulae2" src="Images/two wire.jpg" alt="Formulae" id="image-formulae"><br>
+      <img src="Images/formulae.png" alt="Formulae" id="image-formulae">
     </div>
     <br>
+
+
+  <div class="form-floating mb-3 Input">
+    
     <div class="list">
       <li>a = outside radius of inner conductor</li>
-<li>εr = relative dielectric constant</li>
-<li>μr = relative permeability </li>
-<li>δ = Skin Depth</li>
-<li>σCond = Conductivity of the Conductor</li>
-<li>σDiel = Conductivity of the Dielectric</li>
+      <li>D = Distance between two wires</li>
+      <li>εr = relative dielectric constant</li>
+      <li>μr = relative permeability </li>
+      <li>δ = Skin Depth</li>
+      <li>σCond = Conductivity of the Conductor</li>
+      <li>σDiel = Conductivity of the Dielectric</li>
+      
 
     </div>
 
-  <h3>Input for Two-Wire Line</h3>
-<p>a:</p>
-        <input type="text" class="form-control" id="a">
-<br>
-        <select class="drpdwn" id="unita">
-          <option value="Unit">Unit</option>
-          <option value="Gm">Gm</option>
-          <option value="Mm">Mm</option>
-          <option value="Km">km</option>
-          <option value="m">m</option>
-          <option value="mm">mm</option>
-          <option value="μm">μm</option>
-          <option value="nm">nm</option>
-        </select>
-        <br>
+    <h3>Input for Two-Wire Line</h3>
+    <p>a:</p>
+    <input type="text" class="form-control" id="a">
+    <br>
+    <select class="drpdwn" id="unita">
+      <option value="Unit">Unit</option>
+      <option value="Gm">Gm</option>
+      <option value="Mm">Mm</option>
+      <option value="Km">km</option>
+      <option value="m">m</option>
+      <option value="mm">mm</option>
+      <option value="μm">μm</option>
+      <option value="nm">nm</option>
+    </select>
+    <br>
 
 
-        <p>D:</p>
-          <input type="text" class="form-control" id="d">
-          <br>
-          <select id="unitd">
-          <option value="Unit">Unit</option>
-          <option value="Gm">Gm</option>
-          <option value="Mm">Mm</option>
-          <option value="Km">km</option>
-          <option value="m">m</option>
-          <option value="mm">mm</option>
-          <option value="μm">μm</option>
-          <option value="nm">nm</option>
-          </select>
-        <br>
+    <p>D:</p>
+    <input type="text" class="form-control" id="d">
+    <br>
+    <select id="unitd">
+      <option value="Unit">Unit</option>
+      <option value="Gm">Gm</option>
+      <option value="Mm">Mm</option>
+      <option value="Km">km</option>
+      <option value="m">m</option>
+      <option value="mm">mm</option>
+      <option value="μm">μm</option>
+      <option value="nm">nm</option>
+    </select>
+    <br>
 
 
-        <p>εr:</p>
-        <input type="text" class="form-control" id="εr">
-        <br>
+    <p>εr:</p>
+    <input type="text" class="form-control" id="εr">
+    <br>
 
 
-        <p>μr:</p>
-        <input type="text" class="form-control" id="μr">
-        <br>
+    <p>μr:</p>
+    <input type="text" class="form-control" id="μr">
+    <br>
 
 
-        <p>δ:</p>
-          <input type="text" class="form-control" id="δ">
-          <br>
-          <select id="unitδ">
-            <option value="">Unit</option>
-            <option value="Gm">Gm</option>
-            <option value="Mm">Mm</option>
-            <option value="Km">km</option>
-            <option value="m">m</option>
-            <option value="mm">mm</option>
-            <option value="μm">μm</option>
-            <option value="nm">nm</option>
-          </select>
-        <br>
+    <p>δ:</p>
+    <input type="text" class="form-control" id="δ">
+    <br>
+    <select id="unitδ">
+      <option value="">Unit</option>
+      <option value="Gm">Gm</option>
+      <option value="Mm">Mm</option>
+      <option value="Km">km</option>
+      <option value="m">m</option>
+      <option value="mm">mm</option>
+      <option value="μm">μm</option>
+      <option value="nm">nm</option>
+    </select>
+    <br>
 
 
-        <p>σCond:</p>
-          <input type="text" class="form-control" id="σc">
-          <br>
-          <select id="unitσc">
-            <option value="Unit">Unit</option>
-            <option value="Gm">GS/m</option>
-            <option value="Mm">MS/m</option>
-            <option value="Km">kS/m</option>
-            <option value="m">S/m</option>
-            <option value="mm">mS/m</option>
-          </select>
-        <br>
+    <p>σCond:</p>
+    <input type="text" class="form-control" id="σc">
+    <br>
+    <select id="unitσc">
+      <option value="Unit">Unit</option>
+      <option value="Gm">GS/m</option>
+      <option value="Mm">MS/m</option>
+      <option value="Km">kS/m</option>
+      <option value="m">S/m</option>
+      <option value="mm">mS/m</option>
+    </select>
+    <br>
 
 
-        <p>σDiel:</p>
-        <input type="text" class="form-control" id="σd">
-        <br>
-        <select id="unitσd">
-          <option value="Unit">Unit</option>
-          <option value="Gm">GS/m</option>
-          <option value="Mm">MS/m</option>
-          <option value="Km">kS/m</option>
-          <option value="m">S/m</option>
-          <option value="mm">mS/m</option>
-        </select>
-        <br>
+    <p>σDiel:</p>
+    <input type="text" class="form-control" id="σd">
+    <br>
+    <select id="unitσd">
+      <option value="Unit">Unit</option>
+      <option value="Gm">GS/m</option>
+      <option value="Mm">MS/m</option>
+      <option value="Km">kS/m</option>
+      <option value="m">S/m</option>
+      <option value="mm">mS/m</option>
+    </select>
+    <br>
 
-      </div>
-        <button onclick="wire()" type="button" class="btn btn-primary" id="Calculate">Calculate</button>
-      <!-- <button onclick="calc()" type="button" class="btn btn-primary" id="Calculate">Calculate</button> -->
+  </div>
+  <button onclick="wire()" type="button" class="btn btn-primary" id="Calculate">Calculate</button>
+  <!-- <button onclick="calc()" type="button" class="btn btn-primary" id="Calculate">Calculate</button> -->
   <!-- <input class ="btn btn-primary" id="Calculate" type="submit" value="Calculate"> -->
 
-    <h3>Parameters</h3>
-    <div class="form-floating mb-3 Output">
+  <h3>Parameters</h3>
+  <div class="form-floating mb-3 Output">
     <p>Resistance(R)</p>
-    <input type="text"  class ="output" id="result1">
+    <input type="text" class="output" id="result1">
     <!-- <p>Ω/m</p> -->
     <!-- <label for="Input">Ω/m</label> -->
     <!-- <p id="result1"></p> -->
@@ -167,8 +178,8 @@
     <!-- <label for="Input">S/m</label> -->
     <!-- <p id="result4"></p> -->
 
-    </div>
-    <script src="JS/calc.js"></script>
+  </div>
+  <script src="JS/calc.js"></script>
 </body>
 
 </html>
