@@ -19,6 +19,12 @@ h1{
     text-align: center;
 }
 
+h4{
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: medium;
+    color: #fff;
+}
 .list-group-item.active
 {
     background-color: #b31a28;
@@ -41,4 +47,11 @@ h1{
 
 .VSWR{
     padding-bottom: 5rem;
+}
+
+.bottom-container{
+    width: 100%;
+    height: 100px;
+    background-color: #b31a28;
+    padding-top: 40px;
 }

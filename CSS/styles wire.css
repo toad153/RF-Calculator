@@ -12,6 +12,13 @@ h3{
     text-align: center;
     padding: 1em;
 }
+
+h4{
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: medium;
+    color: #fff;
+}
 .list{
   text-align: left;
 }
@@ -71,4 +78,11 @@ p{
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.bottom-container{
+    width: 100%;
+    height: 100px;
+    background-color: #b31a28;
+    padding-top: 40px;
 }

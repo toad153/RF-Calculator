@@ -4,6 +4,12 @@ h1{
   background-color: #b31a28;
   color: white;
 }
+h4{
+  text-align: center;
+  padding-bottom: 2em;
+  font-size: medium;
+  color: #fff;
+}
 .inp{
   border: 1px solid;
   background-color: lightgray;
@@ -40,4 +46,10 @@ display:block;
 .navbar-somaiya{
   margin: auto;
   padding: 2rem;
+}
+.bottom-container{
+  width: 100%;
+  height: 100px;
+  background-color: #b31a28;
+  padding-top: 40px;
 }
